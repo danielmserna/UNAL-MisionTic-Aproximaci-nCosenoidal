@@ -1,3 +1,4 @@
+import math 
 '''Diseñar una función que permita calcular una aproximación de la función coseno alrededor de 0 para cualquier valor x ∈ R (x dado en radianes), utilizando los primeros n términos de la serie de Maclaurin'''
 
 def aproxCos(x,n):
@@ -11,4 +12,4 @@ def aproxCos(x,n):
     #print('Denominador = ' + str(( ( (-1)**i ) * ( x**(2*i + 1 ) ))))
   return s
 
-print(str(aproxCos(0,20)))
+print(str(aproxCos(math.pi/4,20)))
